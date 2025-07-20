@@ -1,8 +1,11 @@
+alert("Hello, Welcome to JavaScript"); // gives alert on browser
+
 console.log("Hello Avishkar");
 
 // Use of 'let' (block scope)
 let a; //declaration of variable
 a = 5; // intialisation of that variable
+a = 10; // updation of variable
 let b = 6;
 let c = a + b;
 
