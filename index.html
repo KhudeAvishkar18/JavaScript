@@ -5,12 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyWebsite</title>
+
+    <!-- Linking CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Hello World</h1>
+    <h1 id="heading">Hello World</h1>
+    <!-- <h1 id="heading">Hello World2</h1> --> 
+    <!-- We can give same id to multiple elements, but we should not, for that we can use class -->
+
+    <div class="firstDiv">
+        <p>This is paragraph</p>
+        <p>This is paragraph2</p>
+    </div>
+
+    <div class="secondDiv">
+        <button class="btn">ClickMe</button>
+        <!-- <button onclick="console.log('Button Clicked')" class="btn">ClickMe</button> -->
+        <!-- onClick is html event, Above method is called Inline Event Handling (Not suggested) -->
+        <button class="btn">ClickMe2</button>
+    </div>
+
+    <h2 id="task1">Welcome to JS</h2>
+
+    <div class="box">first</div>
+    <div class="box">second</div>
+    <div class="box">third</div>
+
+
+    <button class="mode">Turn on Dark Mode</button>
+
+    <!-- Adding JavaScript -->
+    <script src="events.js"></script>
 </body>
-<script src="methods.js"></script>
 
 </html>

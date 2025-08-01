@@ -62,7 +62,25 @@ console.log("No. of vowels present in Avishkar are :", countVowels("Avishkar"));
 
 
 // Callback Function - A Function passed as an argument to another function
-// We will explore about Callback Functions in detail in future
+
+// Creating a function which takes another function as an argument
+function fun1(name, callback) { // callback is a function
+    console.log("\nMy name is :", name);
+    callback("Aniket");
+}
+
+// calling fun1 function
+
+// function fun2(friendName){
+//     console.log("\nMy friend name is :", friendName);
+// }
+// fun1("Avishkar", fun2);
+
+// Another method to call by using arrow function
+fun1("Avishkar", (friendName) => { // providing an arrow function as an argument i.e. callback function
+    console.log("\nMy friend name is :", friendName);
+});
+
 
 
 
@@ -71,6 +89,7 @@ console.log("No. of vowels present in Avishkar are :", countVowels("Avishkar"));
 let arr = ["Avishkar", "Khude", "EIDIKO"];
 
 // for-each loop (method) takes callback function as an argument
+// this callback function is called inside forEach() method definition with 3 arguments
 // That callback function takes 3 parameters : value, index (optional), array (optional)
 
 // Using normal function as callback
@@ -119,7 +138,7 @@ console.log("Original Array :", arr1)
 // filter() - It creates and returns new array by taking some elements from original array, which satisfies certain condition
 
 newArray = arr1.filter((val, index, array) => {
-    return val % 2 === 0; // The elements which satisfies this condition will be only added to new Array
+    return val % 2 === 0; // The elements which satisfies this condition will only be added to new Array
 })
 
 console.log("\nNew Array created by filter() :", newArray);

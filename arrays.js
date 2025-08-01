@@ -94,7 +94,7 @@ console.log("Original Array :", newArray);
 console.log("New length of array :", newLength);
 console.log([1, 2, 5].push(3)); // Another approach
 
-// pop() - Modify original array - delete & return from end of an array
+// pop() - Modify original array - delete element from end of an array and return deleted element
 let popped = newArray.pop();
 console.log("Original Array :", newArray);
 console.log("Popped element :", popped);
@@ -150,7 +150,7 @@ deleted = newArray.splice(2, 1, 999);
 console.log("deleted elements :", deleted);
 console.log("Original Array :", newArray);
 
-// if we give only one starting index, it will delete rest of the array from that index
+// if we give only starting index, it will delete rest of the array from that index
 deleted = newArray.splice(4);
 console.log("deleted elements :", deleted);
 console.log("Original Array :", newArray);

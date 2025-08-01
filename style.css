@@ -1,3 +1,33 @@
 body{
-    background: #bdf8ee;
+    /* background: #e7f8f5; */
+    background-color: pink;
+}
+
+#heading{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: aliceblue;
+}
+
+.btn{
+    height: 40px;
+    width: 100px;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+.firstDiv{
+    background-color: antiquewhite;
+    padding: 5px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.mode{
+    height: 50px;
+    width: 200px;
+    margin: 10px;
+}
+
+.toggleBackground{
+    background: #292929;
 }

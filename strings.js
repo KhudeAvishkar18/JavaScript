@@ -1,7 +1,7 @@
 console.log("Welcome to strings"); // Note : In JavaScript strings are immutable
 
 // creation of string
-let str = "Avishkar"; // You can also use single qotes
+let str = "Avishkar"; // You can also use single quotes
 console.log(str);
 
 // length of string
@@ -55,7 +55,7 @@ console.log(myString.trim());
 
 // slice() - gives substring
 console.log(myString.slice(2, 5)); // starting index (including), ending index (excluding)
-console.log(myString.slice(3)); // if we give only starting index, it will pring rest of the string from that starting index
+console.log(myString.slice(3)); // if we give only starting index, it will print rest of the string from that starting index
 console.log(myString.slice()); // if we give nothing, it will print entire string
 
 // concat() - concatenate two strings
