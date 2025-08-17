@@ -1,4 +1,5 @@
-console.log("Welcome to strings"); // Note : In JavaScript strings are immutable
+console.log("Welcome to strings"); 
+// Note : In JavaScript strings are immutable i.e. you can't make any inplace changes in original string, you need to create new string for any modification in it. Arrays & objects are mutable.
 
 // creation of string
 let str = "Avishkar"; // You can also use single quotes
@@ -31,6 +32,8 @@ console.log(temp);
 // Escape Characters - \n, \t
 
 console.log("Avishkar\nKhude"); // \n for newline
+console.log("Avishkar\\nKhude"); // To print \n, add extra \ for escape sequence of \n
+
 
 let s1 = "Avishkar\tKhude"; // \t for tab
 console.log(s1);
@@ -61,7 +64,7 @@ console.log(myString.slice()); // if we give nothing, it will print entire strin
 // concat() - concatenate two strings
 let mySirname = "Khude";
 console.log(myString.concat(mySirname));
-console.log(myString + mySirname);
+console.log(myString + mySirname); // Another approach for concatenation
 
 // replace() - replaces part of string with another string (once)
 let newString = "abcdabcd";
@@ -84,6 +87,6 @@ console.log(myString);
 
 // Task
 
-let input = prompt("Enter your name : ");
-let uName = `@${input}${input.length}`;
-alert(uName);
+// let input = prompt("Enter your name : ");
+// let uName = `@${input}${input.length}`;
+// alert(uName);

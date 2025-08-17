@@ -8,7 +8,7 @@ const obj = {
     about() {
         console.log("My name is", this.myName, "and my age is", this.age);
     }
-    // If I use arrow function, this.myName & this.age becomes undefined
+    // If I use arrow function, this.myName & this.age becomes undefined, because arrow function doesn't contain its own 'this' object reference, but normal function have.
 }
 
 console.log(obj.myName);
@@ -39,12 +39,12 @@ console.log(obj2.about());
 
 
 
-// Classes - Class is a program code template for creating objects
-// Objects created by using class also have some properties & methods.
+// Classes (Blueprint) - Class is a program code template for creating objects
+// Objects (Real world entity) created by using class also have some properties & methods.
 
 // Creation of class
 class Car {
-    // Constructor - Constructor is a method which automatically gets invoke (by new keyword) when you create new object of that class (constructor is a reserved keyword)
+    // constructor - constructor is a method which automatically gets invoke (by new keyword) when you create new object of that class (constructor is a reserved keyword)
     // If you dont create constructor for a class, JavaScript will automatically create one
     constructor(a, b) {
         this.a = a;
@@ -54,7 +54,7 @@ class Car {
     }
 
     // Properties
-    x = 4;
+    x = 4; // dont use let or var, directly use propertyName or functionName
     y = 8;
 
     // Methods
@@ -102,10 +102,10 @@ class Child extends Parent {
     constructor(ParentName) {
         console.log("\nChild Constructor started");
         
-        console.log("Parents constructor invoked");
+        console.log("Parents constructor called using super keyword");
         // If parent constructor is present, and we also want to define a child constructor then we always need to call Parent constructor using super keyword in child constructor.
         super(ParentName);
-        // super keyword is mainly used to invoke parent class constructor, also to provide any important information (Properties) to parent class constructor from child class constructor
+        // super keyword is mainly used to invoke parent class constructor, also to provide any important information (Properties) to parent class constructor from child class constructor, also to call methods of parent class in child class super keyword is used
 
         console.log("Child constructors end");
     }
@@ -162,4 +162,4 @@ console.log("Username :", a1.userName, "Email :", a1.email);
 
 
 
-// Note : Arrow functions behave differently when used with OOPS
+// Note : Arrow functions behave differently when used inside classes, because they dont have their own 'this' object

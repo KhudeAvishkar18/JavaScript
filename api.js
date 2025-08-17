@@ -36,3 +36,19 @@ btn.addEventListener('click', apiCall);
 
 
 // Task 1 - Hit a post request using fetch() method in js
+
+/* 
+
+const response = await fetch("https://example.org/post", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({ username: "example" }),
+  // …
+});
+
+let data = response.json();
+console.log(data);
+
+*/

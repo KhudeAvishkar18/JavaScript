@@ -11,7 +11,7 @@ btn.onclick = (e) => { // e is event object, contains all event related informat
 // 2. ondblclick event
 let btn2 = document.querySelectorAll('.btn')[1];
 btn2.ondblclick = (e) => {
-    console.log('Second Button Clicked');
+    console.log('Second Button double Clicked');
 }
 
 // 3. onmouseover event - Fired when a pointing device is moved onto the element or onto one of its children.
@@ -57,7 +57,7 @@ btn.onclick = (evt) => {
 
 
 // Inline event handling makes our code bulky, hence we dont use it
-// Normal JS event handling allows us to handle an event for particular element only once. (If we try to handle same event for same element twice, previous handler will get overridden by newly written handler), hence we dont use it. Instead we prefer event listener.
+// Normal JS event handling allows us to handle an event for particular element only once. (If we try to handle same event for same element twice, previous handler will get overridden by newly written handler), hence we dont use it. Instead we prefer add event listener.
 
 // Add Event Listeners - Suggested Method for adding or removing event handlers
 

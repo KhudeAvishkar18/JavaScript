@@ -27,8 +27,8 @@ const mul = (x, y) => { // definition of arrow function is stored in const mul v
     return x * y;
 }
 
-console.log(mul);
-console.log(mul(2, 5));
+console.log(mul); // prints function body
+console.log(mul(2, 5)); // gives result of function 
 
 
 
@@ -69,11 +69,12 @@ function fun1(name, callback) { // callback is a function
     callback("Aniket");
 }
 
-// calling fun1 function
-
 // function fun2(friendName){
 //     console.log("\nMy friend name is :", friendName);
 // }
+
+// calling fun1 function
+
 // fun1("Avishkar", fun2);
 
 // Another method to call by using arrow function
@@ -90,7 +91,7 @@ let arr = ["Avishkar", "Khude", "EIDIKO"];
 
 // for-each loop (method) takes callback function as an argument
 // this callback function is called inside forEach() method definition with 3 arguments
-// That callback function takes 3 parameters : value, index (optional), array (optional)
+// That callback function takes 3 parameters : value, index (optional), originalArray (optional)
 
 // Using normal function as callback
 // arr.forEach(function funName(val, index, originalArray){
@@ -152,9 +153,9 @@ let addition = arr1.reduce((result, current) => {
     console.log("Current :", current);
     return (result + current); // adds each element with its next element and returns the final sum as result when no current element is present
 })
-// 1st iteration - result = 1st element of array, current = 2nd element of array
-// 2nd iteration - result = returned value at 1st iteration, current = 3rd element
-// 3rd iteration - result = returned value at 2nd iteration, current = 4th element
+// 1st iteration -> result = 1st element of array, current = 2nd element of array
+// 2nd iteration -> result = returned value at 1st iteration, current = 3rd element
+// 3rd iteration -> result = returned value at 2nd iteration, current = 4th element
 // and so on....
 // When no current element is present, 'result' is returned by reduce()
 

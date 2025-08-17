@@ -13,9 +13,9 @@ let c = a + b;
 console.log("Sum of ", a, " + ", b, " is : ", c);
 
 console.log("abc" + 123);
-console.log(123 + "abc");
+console.log(123 + "123");
 console.log(123 + 123);
-console.log("abc" + "abc");
+console.log("abc" + "123");
 
 // Use of 'var' (global scope)
 // We can redeclare the 'var' variable hence we dont use it and prefer using 'let'.
